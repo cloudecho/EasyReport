@@ -23,13 +23,13 @@ easytoolsoft:
             version: '@easytoolsoft.easyreport.env.version@'
         member:
             datasource:
-                driver-class-name: org.h2.Driver
+                driver-class-name: '@easytoolsoft.easyreport.member.datasource.driverClass@'
                 password: '@easytoolsoft.easyreport.member.datasource.password@'
                 url: '@easytoolsoft.easyreport.member.datasource.url@'
                 username: '@easytoolsoft.easyreport.member.datasource.username@'
         meta:
             datasource:
-                driver-class-name: org.h2.Driver
+                driver-class-name: '@easytoolsoft.easyreport.meta.datasource.driverClass@'
                 password: '@easytoolsoft.easyreport.meta.datasource.password@'
                 url: '@easytoolsoft.easyreport.meta.datasource.url@'
                 username: '@easytoolsoft.easyreport.meta.datasource.username@'
