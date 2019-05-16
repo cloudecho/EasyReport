@@ -29,7 +29,7 @@ public class MetaDataSourceConfig extends AbstractDataSourceConfig {
     @Bean
     @ConfigurationProperties(prefix = "easytoolsoft.easyreport.meta.datasource")
     public DataSourceProperties secondDataSourceProperties() {
-        return new DataSourceProperties();
+        return new DataSourceProperties2();
     }
 
     @Bean(name = "metaDataSource")
