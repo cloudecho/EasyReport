@@ -17,12 +17,7 @@ public class MySqlQueryer extends AbstractQueryer implements Queryer {
 
     @Override
     protected String preprocessSqlText(String sqlText) {
-        sqlText = StringUtils.stripEnd(sqlText.trim(), ";");
-        final Pattern pattern = Pattern.compile("limit.*?$", Pattern.CASE_INSENSITIVE);
-        final Matcher matcher = pattern.matcher(sqlText);
-        if (matcher.find()) {
-            sqlText = matcher.replaceFirst("");
-        }
-        return sqlText + " limit 1";
+        sqlText = sqlText.replace('"', '\'');
+        return sqlText;
     }
 }
