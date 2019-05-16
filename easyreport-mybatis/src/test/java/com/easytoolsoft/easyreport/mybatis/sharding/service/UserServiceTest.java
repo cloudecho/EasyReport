@@ -25,10 +25,11 @@ public class UserServiceTest extends BaseTest {
     @Test
     public void addTest() {
         final User user = User.builder()
-            .account("easytoolsoft_test")
+            .id(10001)
+            .account("easytoolsoft_test1")
             .name("easytoolsoft.com")
             .password("easytoolsoft_test")
-            .email("test@easytoolsoft.com")
+            .email("test1@easytoolsoft.com")
             .roles("1")
             .salt("abcdefg")
             .status((byte)0)

@@ -25,14 +25,15 @@ public class UserServiceTest extends BaseTest {
     @Test
     public void addTest() {
         final User user = User.builder()
-            .account("easytoolsoft_test")
+            .id(10002)
+            .account("easytoolsoft_test2")
             .name("easytoolsoft.com")
             .password("easytoolsoft_test")
-            .email("test@easytoolsoft.com")
-            .roles("1")
+            .email("test2@easytoolsoft.com")
+            .roles("2")
             .salt("abcdefg")
             .status((byte)0)
-            .telephone("13800000000")
+            .telephone("13800000002")
             .gmtCreated(new Date())
             .comment("")
             .build();

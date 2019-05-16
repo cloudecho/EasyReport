@@ -1,5 +1,7 @@
 package com.easytoolsoft.easyreport.mybatis.readwrite;
 
+import org.junit.Test;
+
 import com.easytoolsoft.easyreport.mybatis.BaseTest;
 
 /**
